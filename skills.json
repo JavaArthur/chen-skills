@@ -1,18 +1,38 @@
 {
   "name": "Chen Skills",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Cypher 专属技能库 - AI Agent 能力沉淀与复用",
   "author": "Channing / Cypher",
   "repository": "https://github.com/JavaArthur/chen-skills",
   "skills": [
     {
+      "name": "human-writing",
+      "version": "1.0.0",
+      "description": "活人感写作心法 - 从0到1写出有灵魂的内容",
+      "category": "writing",
+      "status": "stable",
+      "complements": "ai-flavor-remover",
+      "role": "写作前/中：选题、框架、心法"
+    },
+    {
       "name": "ai-flavor-remover",
-      "version": "2.0.0",
+      "version": "2.1.0",
       "description": "AI 味去除 - 让 AI 生成的文字读起来像人写的",
       "category": "writing",
-      "status": "stable"
+      "status": "stable",
+      "complements": "human-writing",
+      "role": "写作后：润色、去机械化"
     }
   ],
+  "workflow": {
+    "writing": [
+      "human-writing --check (选题)",
+      "human-writing --template=story (框架)",
+      "写作 (填充内容)",
+      "ai-flavor-remover --mode=medium (润色)",
+      "human-writing --score (质检)"
+    ]
+  },
   "templates": {
     "new-skill": "./templates/SKILL_TEMPLATE.md"
   }

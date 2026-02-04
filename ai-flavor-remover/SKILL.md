@@ -325,9 +325,51 @@ jobs:
 
 ---
 
+## 与 human-writing 的协同
+
+这两个 Skill 是**互补关系**：
+
+| Skill | 职责 | 作用时机 |
+|-------|------|---------|
+| **human-writing** | 从0到1写出好内容（心法+战略+技法） | 写作前/中 |
+| **ai-flavor-remover** | 让好内容读起来更自然（润色+去机械化） | 写作后 |
+
+**完整写作流程**：
+
+```
+Step 1: 选题
+└─> human-writing --check --topic="xxx"
+    └─> 确认选题有势能（专业+兴趣+时机）
+
+Step 2: 框架
+└─> human-writing --template=story
+    └─> 按冲突→探索→发现→高潮→结局 搭建结构
+
+Step 3: 写作
+└─> 填充内容，保持活人感（第一人称、真实体验）
+
+Step 4: 润色 ← 你在这里
+└─> ai-flavor-remover --mode=medium --domain=tech
+    └─> 去除"值得注意的是"等AI高频词
+    └─> 长短句重组，注入口语化表达
+
+Step 5: 质检
+└─> human-writing --score article.md
+    └─> HKR 评分（愉悦感/知识/共鸣）
+```
+
+**关键区别**：
+- `human-writing` 解决"写什么"和"怎么写出灵魂"
+- `ai-flavor-remover` 解决"怎么读起来不像机器写的"
+
+两者配合，从选题到终稿，覆盖完整写作链路。
+
+---
+
 ## 版本
 
-**Version:** 2.0.0 - 通用重构版  
+**Version:** 2.1.0 - 通用重构版 + 协同增强  
 **Changelog:**
+- v2.1: 添加与 human-writing 的协同说明
 - v2.0: 重构为通用工具，支持多模式、多领域
 - v1.0: 初始版本，基于 Gemini 2.5 Pro
