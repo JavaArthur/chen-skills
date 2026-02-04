@@ -1,0 +1,14 @@
+{
+  "mode": "medium",
+  "domain": "tech",
+  "customReplacements": {
+    "系统": "平台",
+    "用户": "你"
+  },
+  "preservePatterns": [
+    "API",
+    "JSON",
+    "正则表达式",
+    "OpenClaw"
+  ]
+}
