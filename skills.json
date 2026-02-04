@@ -1,0 +1,19 @@
+{
+  "name": "Chen Skills",
+  "version": "1.0.0",
+  "description": "Cypher 专属技能库 - AI Agent 能力沉淀与复用",
+  "author": "Channing / Cypher",
+  "repository": "https://github.com/JavaArthur/chen-skills",
+  "skills": [
+    {
+      "name": "ai-flavor-remover",
+      "version": "2.0.0",
+      "description": "AI 味去除 - 让 AI 生成的文字读起来像人写的",
+      "category": "writing",
+      "status": "stable"
+    }
+  ],
+  "templates": {
+    "new-skill": "./templates/SKILL_TEMPLATE.md"
+  }
+}
