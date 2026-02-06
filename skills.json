@@ -22,6 +22,33 @@
       "status": "stable",
       "complements": "human-writing",
       "role": "写作后：润色、去机械化"
+    },
+    {
+      "name": "project-context-sync",
+      "version": "1.0.0",
+      "description": "项目上下文同步 - 每次 git commit 后自动更新 PROJECT_STATE.md",
+      "category": "productivity",
+      "status": "active",
+      "source": "openclaw/skills/joe3112",
+      "role": "跨会话上下文传递"
+    },
+    {
+      "name": "god-mode",
+      "version": "1.0.0",
+      "description": "开发者监督仪表盘 - 多项目状态监控与 AI agent 教练",
+      "category": "devtools",
+      "status": "active",
+      "source": "openclaw/skills/infantlab",
+      "role": "项目监督与优化建议"
+    },
+    {
+      "name": "clawlist",
+      "version": "1.0.0",
+      "description": "任务管理大师 - 多步骤项目计划、执行、跟踪",
+      "category": "productivity",
+      "status": "active",
+      "source": "openclaw/skills/arisylafeta",
+      "role": "复杂任务拆解与执行"
     }
   ],
   "workflow": {
