@@ -1,0 +1,14 @@
+{
+  "name": "conversation-memory-indexer",
+  "version": "1.0.0",
+  "description": "对话记忆索引系统 - 将每日对话转化为可检索的结构化索引",
+  "main": "index.js",
+  "scripts": {
+    "generate": "node index.js --date",
+    "search": "node index.js --search",
+    "sentiment": "node index.js --sentiment"
+  },
+  "keywords": ["memory", "index", "conversation", "retrieval"],
+  "author": "Cypher",
+  "license": "MIT"
+}
