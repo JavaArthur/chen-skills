@@ -49,6 +49,16 @@
       "status": "active",
       "source": "openclaw/skills/arisylafeta",
       "role": "复杂任务拆解与执行"
+    },
+    {
+      "name": "md2wechat",
+      "version": "1.0.0",
+      "description": "Markdown 转微信公众号 - 一键转换并上传到微信草稿箱",
+      "category": "publishing",
+      "status": "active",
+      "path": "md2wechat-skill",
+      "role": "公众号文章排版与发布",
+      "features": ["AI 主题样式", "批量发布", "图片上传"]
     }
   ],
   "workflow": {
